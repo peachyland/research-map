@@ -1,0 +1,1196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<title>Self-Improving AI Research Map</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script>window.MAP_VIEW_ONLY = true;
+window.MAP_DATA = {
+  "title": "Adaptive, Trustworthy, and Self-Improving AI Systems",
+  "question": "How can AI systems efficiently and reliably leverage feedback and experience to improve their problem-solving capabilities and autonomously improve themselves?",
+  "updated": "2026-10-18T22:44:10.702Z",
+  "regionColors": {
+    "interactive": "#d1495b",
+    "evaluation": "#3a6ea5",
+    "harness": "#d9902f"
+  },
+  "nodes": [
+    {
+      "id": "interactive",
+      "parent": null,
+      "kind": "region",
+      "title": "Interactive",
+      "summary": "How an agent splits effort between internal reasoning and external interaction.",
+      "questions": [],
+      "experiments": [],
+      "theory": [],
+      "bottlenecks": [],
+      "literature": [],
+      "notes": "",
+      "status": "idea",
+      "activity": "unknown",
+      "interest": 0,
+      "source": "user outline 2026-10-18",
+      "pos": [
+        -680,
+        -160
+      ]
+    },
+    {
+      "id": "int_reason_ext",
+      "parent": "interactive",
+      "kind": "topic",
+      "title": "Reasoning vs external interaction",
+      "summary": "When should the agent keep reasoning, and when should it turn to the outside world?",
+      "questions": [],
+      "experiments": [],
+      "theory": [],
+      "bottlenecks": [],
+      "literature": [],
+      "notes": "",
+      "status": "idea",
+      "activity": "unknown",
+      "interest": 0,
+      "source": "user outline 2026-10-18"
+    },
+    {
+      "id": "evaluation",
+      "parent": null,
+      "kind": "region",
+      "title": "Evaluation",
+      "summary": "Judging the value of actions, environments, feedback, experience, failures and models.",
+      "questions": [],
+      "experiments": [],
+      "theory": [],
+      "bottlenecks": [],
+      "literature": [],
+      "notes": "",
+      "status": "idea",
+      "activity": "unknown",
+      "interest": 0,
+      "source": "user outline 2026-10-18",
+      "pos": [
+        0,
+        300
+      ]
+    },
+    {
+      "id": "ev_action",
+      "parent": "evaluation",
+      "kind": "topic",
+      "title": "Action evaluation",
+      "summary": "How to judge the value of an attempt, and how to do credit assignment.",
+      "questions": [],
+      "experiments": [],
+      "theory": [],
+      "bottlenecks": [],
+      "literature": [],
+      "notes": "",
+      "status": "idea",
+      "activity": "unknown",
+      "interest": 0,
+      "source": "user outline 2026-10-18"
+    },
+    {
+      "id": "ev_env",
+      "parent": "evaluation",
+      "kind": "topic",
+      "title": "Environment value",
+      "summary": "How to evaluate the value of an environment.",
+      "questions": [],
+      "experiments": [],
+      "theory": [],
+      "bottlenecks": [],
+      "literature": [],
+      "notes": "",
+      "status": "idea",
+      "activity": "unknown",
+      "interest": 0,
+      "source": "user outline 2026-10-18"
+    },
+    {
+      "id": "ev_feedback",
+      "parent": "evaluation",
+      "kind": "topic",
+      "title": "What makes feedback valuable?",
+      "summary": "How to obtain more valuable feedback from the environment.",
+      "questions": [],
+      "experiments": [],
+      "theory": [],
+      "bottlenecks": [],
+      "literature": [],
+      "notes": "",
+      "status": "idea",
+      "activity": "unknown",
+      "interest": 0,
+      "source": "user outline 2026-10-18"
+    },
+    {
+      "id": "ev_experience",
+      "parent": "evaluation",
+      "kind": "topic",
+      "title": "Experience evaluation",
+      "summary": "Evaluating experience, with links to RSI and memory.",
+      "questions": [],
+      "experiments": [],
+      "theory": [],
+      "bottlenecks": [],
+      "literature": [],
+      "notes": "",
+      "status": "idea",
+      "activity": "unknown",
+      "interest": 0,
+      "source": "user outline 2026-10-18"
+    },
+    {
+      "id": "ev_failure",
+      "parent": "evaluation",
+      "kind": "topic",
+      "title": "Failure evaluation & red-teaming",
+      "summary": "",
+      "questions": [],
+      "experiments": [],
+      "theory": [],
+      "bottlenecks": [],
+      "literature": [],
+      "notes": "",
+      "status": "idea",
+      "activity": "unknown",
+      "interest": 0,
+      "source": "user outline 2026-10-18"
+    },
+    {
+      "id": "ev_model",
+      "parent": "evaluation",
+      "kind": "topic",
+      "title": "Model evaluation",
+      "summary": "",
+      "questions": [],
+      "experiments": [],
+      "theory": [],
+      "bottlenecks": [],
+      "literature": [],
+      "notes": "",
+      "status": "idea",
+      "activity": "unknown",
+      "interest": 0,
+      "source": "user outline 2026-10-18"
+    },
+    {
+      "id": "harness",
+      "parent": null,
+      "kind": "region",
+      "title": "Harness",
+      "summary": "The scaffold around the model, split into decision, infra and learning harness.",
+      "questions": [],
+      "experiments": [],
+      "theory": [],
+      "bottlenecks": [],
+      "literature": [],
+      "notes": "",
+      "status": "idea",
+      "activity": "unknown",
+      "interest": 0,
+      "source": "user outline 2026-10-18",
+      "pos": [
+        680,
+        -160
+      ]
+    },
+    {
+      "id": "h_types",
+      "parent": "harness",
+      "kind": "topic",
+      "title": "Decision / infra / learning harness",
+      "summary": "Three kinds of harness: decision harness, infra harness, learning harness.",
+      "questions": [],
+      "experiments": [],
+      "theory": [],
+      "bottlenecks": [],
+      "literature": [],
+      "notes": "",
+      "status": "idea",
+      "activity": "unknown",
+      "interest": 0,
+      "source": "user outline 2026-10-18"
+    },
+    {
+      "id": "h_replace",
+      "parent": "harness",
+      "kind": "topic",
+      "title": "Is decision harness being replaced by model updates?",
+      "summary": "How much of the decision harness is being replaced by updating the model?",
+      "questions": [],
+      "experiments": [],
+      "theory": [],
+      "bottlenecks": [],
+      "literature": [],
+      "notes": "",
+      "status": "idea",
+      "activity": "unknown",
+      "interest": 0,
+      "source": "user outline 2026-10-18"
+    },
+    {
+      "id": "h_learn_vs_model",
+      "parent": "harness",
+      "kind": "topic",
+      "title": "Learning harness vs model updating",
+      "summary": "What is the difference between a learning harness and updating the model?\nLike a skill and the model updating",
+      "questions": [],
+      "experiments": [],
+      "theory": [],
+      "bottlenecks": [],
+      "literature": [],
+      "notes": "",
+      "status": "idea",
+      "activity": "unknown",
+      "interest": 0,
+      "source": "user outline 2026-10-18"
+    }
+  ],
+  "edges": [
+    {
+      "source": "ev_action",
+      "target": "int_reason_ext",
+      "type": "feeds",
+      "label": "an external action is worth taking only if its value can be judged"
+    },
+    {
+      "source": "ev_feedback",
+      "target": "int_reason_ext",
+      "type": "feeds",
+      "label": "interacting externally pays off when the feedback is valuable"
+    },
+    {
+      "source": "ev_feedback",
+      "target": "ev_env",
+      "type": "feeds",
+      "label": "feedback quality is part of an environment's value"
+    },
+    {
+      "source": "ev_action",
+      "target": "ev_experience",
+      "type": "analogy",
+      "label": "credit assignment per action ↔ per experience"
+    },
+    {
+      "source": "ev_failure",
+      "target": "ev_experience",
+      "type": "feeds",
+      "label": "failures are experiences to evaluate"
+    },
+    {
+      "source": "ev_failure",
+      "target": "ev_model",
+      "type": "feeds",
+      "label": "red-teaming exposes model weaknesses"
+    },
+    {
+      "source": "ev_experience",
+      "target": "h_learn_vs_model",
+      "type": "feeds",
+      "label": "evaluated experience goes to memory (learning harness) or to weights"
+    },
+    {
+      "source": "ev_model",
+      "target": "h_replace",
+      "type": "tests",
+      "label": "track what the model alone can do as it is updated"
+    },
+    {
+      "source": "int_reason_ext",
+      "target": "h_replace",
+      "type": "analogy",
+      "label": "is the when-to-interact decision made by the harness or learned by the model?"
+    },
+    {
+      "source": "h_types",
+      "target": "h_replace",
+      "type": "feeds",
+      "label": "defines the decision harness"
+    },
+    {
+      "source": "h_types",
+      "target": "h_learn_vs_model",
+      "type": "feeds",
+      "label": "defines the learning harness"
+    },
+    {
+      "source": "h_replace",
+      "target": "h_learn_vs_model",
+      "type": "analogy",
+      "label": "both ask: harness vs weights"
+    }
+  ]
+};</script>
+<style>
+:root {
+  --bg: #eef0eb; --dot: #d6dad2; --panel: #fbfcf9; --ink: #23262b; --muted: #6c7078;
+  --line: #d7dbd2; --halo: #eef0eb; --edge: #8b8f96; --gold: #c99a06; --chip: #e4e8df;
+  --warn: #b5541c; --ok: #3f7d4f; --shadow: 0 6px 24px rgba(40,35,20,.12);
+  --c-feeds: #6f7680; --c-tests: #2f7fb5; --c-analogy: #8a5cc2; --c-tension: #c8433b; --c-bounds: #b8860b;
+}
+:root[data-theme="dark"] {
+  --bg: #15171b; --dot: #262a31; --panel: #1e2126; --ink: #e9e6df; --muted: #9ba1a9;
+  --line: #343941; --halo: #15171b; --edge: #7d838c; --gold: #e2b93b; --chip: #2a2e35;
+  --warn: #e08a52; --ok: #79c08b; --shadow: 0 6px 24px rgba(0,0,0,.45);
+  --c-feeds: #9aa1ab; --c-tests: #5aa9df; --c-analogy: #b08ae6; --c-tension: #ec6c63; --c-bounds: #dcb04a; color-scheme: dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15171b; --dot: #262a31; --panel: #1e2126; --ink: #e9e6df; --muted: #9ba1a9;
+    --line: #343941; --halo: #15171b; --edge: #7d838c; --gold: #e2b93b; --chip: #2a2e35;
+    --warn: #e08a52; --ok: #79c08b; --shadow: 0 6px 24px rgba(0,0,0,.45);
+    --c-feeds: #9aa1ab; --c-tests: #5aa9df; --c-analogy: #b08ae6; --c-tension: #ec6c63; --c-bounds: #dcb04a; color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; overflow: hidden; }
+body { background: var(--bg); color: var(--ink); font: 14px/1.45 ui-sans-serif, -apple-system, "Segoe UI", "PingFang SC", sans-serif; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+
+#stage { position: fixed; inset: 0; background-image: radial-gradient(var(--dot) 1px, transparent 1px); background-size: 22px 22px; }
+svg#map { width: 100%; height: 100%; display: block; cursor: grab; }
+svg#map:active { cursor: grabbing; }
+
+/* ── map elements ── */
+.territory { pointer-events: none; fill-opacity: .07; stroke-opacity: .35; stroke-dasharray: 4 5; vector-effect: non-scaling-stroke; }
+.node { cursor: pointer; }
+.node .shape { stroke: var(--halo); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+.node.k-region .shape { stroke-width: 3; }
+.node.emerging .shape, .node.sparse .shape { stroke: var(--ink); stroke-dasharray: 3 3; stroke-opacity: .7; }
+.node .ring { fill: none; stroke: var(--gold); stroke-width: 2.5; vector-effect: non-scaling-stroke; }
+.node .status-dot { stroke: var(--halo); stroke-width: 1; vector-effect: non-scaling-stroke; }
+.label { fill: var(--ink); paint-order: stroke; stroke: var(--halo); stroke-width: 3.5px; stroke-linejoin: round; pointer-events: none; text-anchor: middle; }
+.label.d1 { font-weight: 700; letter-spacing: .02em; }
+.label.d2 { font-weight: 600; }
+.label.d3 { fill: var(--muted); }
+
+.edge { fill: none; stroke-width: 1.4; vector-effect: non-scaling-stroke; stroke-opacity: .55; }
+.edge.agg { stroke: var(--edge); stroke-opacity: .35; stroke-linecap: round; }
+.edge.t-feeds { stroke: var(--c-feeds); }
+.edge.t-tests { stroke: var(--c-tests); stroke-dasharray: 2 4; stroke-width: 1.8; }
+.edge.t-analogy { stroke: var(--c-analogy); stroke-dasharray: 7 4; }
+.edge.t-tension { stroke: var(--c-tension); }
+.edge.t-bounds { stroke: var(--c-bounds); stroke-dasharray: 9 3 2 3; }
+.edge-hit { fill: none; stroke: transparent; stroke-width: 10; vector-effect: non-scaling-stroke; cursor: help; }
+.edge-label { fill: var(--muted); paint-order: stroke; stroke: var(--halo); stroke-width: 3px; text-anchor: middle; pointer-events: none; font-style: italic; }
+
+/* semantic zoom: band classes on the svg */
+svg.band0 .label.d2, svg.band0 .label.d3, svg.band1 .label.d3, svg.band2 .label.d3 { display: none; }
+svg.band0 .node.d3, svg.band1 .node.d3, svg.band0 .node.d4, svg.band1 .node.d4 { display: none; }
+svg .node.force, svg .label.force { display: inline !important; }
+
+svg.has-sel .node:not(.hl), svg.has-sel .label:not(.hl) { opacity: .16; }
+svg.has-sel .edge:not(.hl) { stroke-opacity: .07; }
+svg.has-sel .edge.hl { stroke-opacity: .95; stroke-width: 2.2; }
+svg.filtering .node.fdim, svg.filtering .label.fdim { opacity: .14; }
+.node.sel .shape { stroke: var(--ink); stroke-width: 3; stroke-dasharray: none; }
+
+/* ── chrome ── */
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); }
+.view-only .edit-only { display: none !important; }
+#top { position: fixed; top: calc(12px + env(safe-area-inset-top, 0px)); left: calc(12px + env(safe-area-inset-left, 0px)); right: calc(12px + env(safe-area-inset-right, 0px)); display: flex; gap: 8px; align-items: center; pointer-events: none; flex-wrap: wrap; }
+#top > * { pointer-events: auto; }
+#brand { padding: 8px 14px; max-width: 420px; }
+#brand h1 { margin: 0; font-size: 15px; line-height: 1.25; }
+#brand p { margin: 2px 0 0; font-size: 12px; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+#searchWrap { position: relative; }
+#search { width: 260px; padding: 9px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--panel); box-shadow: var(--shadow); outline: none; }
+#search:focus { border-color: var(--ink); }
+#results { position: absolute; top: 44px; left: 0; width: 340px; max-height: 50vh; overflow: auto; padding: 4px; display: none; }
+#results.open { display: block; }
+.res { padding: 6px 8px; border-radius: 8px; cursor: pointer; display: flex; gap: 8px; align-items: baseline; }
+.res:hover, .res.active { background: var(--chip); }
+.res small { color: var(--muted); margin-left: auto; white-space: nowrap; }
+.sw { width: 10px; height: 10px; border-radius: 50%; flex: none; display: inline-block; transform: translateY(1px); }
+.tools { display: flex; gap: 6px; flex-wrap: wrap; }
+.btn { border: 1px solid var(--line); background: var(--panel); padding: 7px 11px; border-radius: 9px; box-shadow: var(--shadow); white-space: nowrap; }
+.btn:hover { border-color: var(--ink); }
+.btn.small { padding: 4px 9px; box-shadow: none; font-size: 13px; }
+.btn.primary { background: var(--ink); color: var(--panel); border-color: var(--ink); }
+.btn.danger { color: var(--warn); }
+#status { font-size: 12px; padding: 6px 10px; border-radius: 9px; background: var(--panel); border: 1px solid var(--line); color: var(--muted); }
+#status.warn { color: var(--warn); border-color: var(--warn); }
+#status.ok { color: var(--ok); }
+
+#legend { position: fixed; left: calc(12px + env(safe-area-inset-left, 0px)); bottom: calc(12px + env(safe-area-inset-bottom, 0px)); padding: 12px 14px; width: 272px; max-height: calc(100vh - 110px); overflow: auto; font-size: 12.5px; }
+#legend h3 { margin: 10px 0 6px; font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+#legend h3:first-child { margin-top: 0; }
+.lg-row { display: flex; align-items: center; gap: 8px; padding: 2px 0; }
+.lg-row.click { cursor: pointer; border-radius: 6px; }
+.lg-row.click:hover { background: var(--chip); }
+.lg-row .count { margin-left: auto; color: var(--muted); font-variant-numeric: tabular-nums; }
+.lg-row label { display: flex; align-items: center; gap: 8px; cursor: pointer; width: 100%; }
+#legend select { width: 100%; padding: 5px; border-radius: 7px; border: 1px solid var(--line); background: var(--panel); }
+#legend.collapsed .body { display: none; }
+#legend .head { display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-weight: 600; }
+#legend .hint { color: var(--muted); margin-top: 8px; line-height: 1.4; }
+
+#panel { position: fixed; top: calc(70px + env(safe-area-inset-top, 0px)); right: calc(12px + env(safe-area-inset-right, 0px)); bottom: calc(12px + env(safe-area-inset-bottom, 0px)); width: 400px; display: none; flex-direction: column; overflow: hidden; }
+#panel.open { display: flex; }
+#panel .phead { padding: 14px 16px 10px; border-bottom: 1px solid var(--line); }
+#panel .pbody { padding: 12px 16px 18px; overflow: auto; flex: 1; }
+.crumbs { font-size: 12px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+.crumbs a { cursor: pointer; text-decoration: none; color: var(--muted); }
+.crumbs a:hover { color: var(--ink); text-decoration: underline; }
+#panel h2 { margin: 6px 0 6px; font-size: 18px; line-height: 1.25; }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.chip { font-size: 11.5px; padding: 2px 8px; border-radius: 999px; background: var(--chip); color: var(--muted); }
+.chip.st-active { background: color-mix(in srgb, var(--ok) 20%, transparent); color: var(--ok); }
+.chip.st-rejected { background: color-mix(in srgb, var(--warn) 18%, transparent); color: var(--warn); }
+.chip.gold { color: var(--gold); background: color-mix(in srgb, var(--gold) 16%, transparent); }
+.pactions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
+.sec h4 { margin: 16px 0 6px; font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.sec ul { margin: 0; padding-left: 18px; }
+.sec li { margin: 3px 0; }
+.sec p { margin: 0; }
+.conn { display: flex; gap: 8px; align-items: baseline; padding: 4px 6px; border-radius: 7px; cursor: pointer; }
+.conn:hover { background: var(--chip); }
+.conn .ty { font-size: 11px; font-weight: 600; min-width: 64px; white-space: nowrap; }
+.conn .lab { color: var(--muted); font-size: 12.5px; }
+.conn .x { margin-left: auto; border: none; background: none; color: var(--warn); }
+.ty-feeds { color: var(--c-feeds); } .ty-tests { color: var(--c-tests); } .ty-analogy { color: var(--c-analogy); }
+.ty-tension { color: var(--c-tension); } .ty-bounds { color: var(--c-bounds); }
+
+form.edit label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 12px 0 4px; }
+form.edit input, form.edit textarea, form.edit select, .linkform input, .linkform select {
+  width: 100%; padding: 7px 9px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); }
+form.edit textarea { min-height: 70px; resize: vertical; }
+form.edit .row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+.linkform { margin-top: 8px; padding: 10px; border: 1px dashed var(--line); border-radius: 10px; display: grid; gap: 6px; }
+.muted { color: var(--muted); }
+
+#tip { position: fixed; pointer-events: none; max-width: 300px; padding: 8px 10px; font-size: 12.5px; display: none; z-index: 20; }
+#tip b { display: block; margin-bottom: 2px; }
+#toast { position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%); padding: 9px 14px; display: none; z-index: 30; }
+
+#help { position: fixed; inset: 0; background: rgba(0,0,0,.35); display: none; align-items: center; justify-content: center; z-index: 40; padding: 16px; }
+#help.open { display: flex; }
+#help .card { max-width: 620px; max-height: 85vh; overflow: auto; padding: 20px 24px; }
+#help h2 { margin-top: 0; }
+#help code { background: var(--chip); padding: 1px 5px; border-radius: 5px; }
+
+@media (max-width: 760px) {
+  #brand { display: none; }
+  #search { width: calc(100vw - 24px); }
+  #results { width: calc(100vw - 24px); }
+  #legend { width: auto; right: 12px; max-height: 40vh; }
+  #panel { top: auto; left: 0; right: 0; bottom: 0; width: auto; height: 62vh; border-radius: 14px 14px 0 0; padding-bottom: env(safe-area-inset-bottom, 0px); }
+}
+</style>
+<div id="stage"><svg id="map" class="band0"></svg></div>
+
+<div id="top">
+  <div id="brand" class="card"><h1 id="mapTitle">Research Map</h1><p id="mapQuestion"></p></div>
+  <div id="searchWrap">
+    <input id="search" placeholder="Search nodes…  ( / )" autocomplete="off">
+    <div id="results" class="card"></div>
+  </div>
+  <div class="tools">
+    <button class="btn" id="bFit" title="Zoom to fit (f)">Fit</button>
+    <button class="btn edit-only" id="bRegion" title="Add a new region">+ Region</button>
+    <button class="btn edit-only" id="bExport" title="Download data.js">Export</button>
+    <button class="btn edit-only" id="bImport" title="Load a data.js / .json file">Import</button>
+    <button class="btn" id="bTheme" title="Toggle light/dark">◐</button>
+    <button class="btn" id="bHelp">?</button>
+  </div>
+  <span id="status" class="edit-only"></span>
+  <input type="file" id="importFile" accept=".js,.json" hidden>
+</div>
+
+<div id="legend" class="card">
+  <div class="head" id="legendHead"><span>Map legend</span><span id="legendToggle" class="muted">hide</span></div>
+  <div class="body">
+    <h3 style="margin-top:10px">Regions (click to fly)</h3>
+    <div id="lgRegions"></div>
+    <h3>Highlight</h3>
+    <select id="hlFilter">
+      <option value="">— none —</option>
+      <option value="interest">Our interest (★★ and up)</option>
+      <option value="active">Active projects &amp; questions</option>
+      <option value="open">Emerging / sparse areas (cities being built)</option>
+      <option value="crowded">Crowded areas</option>
+    </select>
+    <h3>Connections</h3>
+    <div id="lgEdges"></div>
+    <h3>Nodes</h3>
+    <div class="lg-row"><svg width="22" height="18"><circle cx="11" cy="9" r="7" fill="var(--muted)" stroke="var(--ink)" stroke-dasharray="3 2"/></svg>dashed = emerging / sparse field</div>
+    <div class="lg-row"><svg width="22" height="18"><circle cx="11" cy="9" r="5" fill="var(--muted)"/><circle cx="11" cy="9" r="8" fill="none" stroke="var(--gold)" stroke-width="2"/></svg>gold ring = high interest for us</div>
+    <div class="lg-row"><svg width="22" height="18"><rect x="4" y="2" width="14" height="14" rx="3" fill="var(--muted)"/></svg>square = concrete project</div>
+    <div class="lg-row"><svg width="22" height="18"><circle cx="11" cy="9" r="6" fill="var(--muted)"/><circle cx="16" cy="4" r="3.5" fill="var(--ok)"/></svg>green dot = active · orange = rejected</div>
+    <div class="hint">Zoom in to see more detail: regions → topics → questions. Grey lines between regions show how many cross-links connect them.</div>
+  </div>
+</div>
+
+<div id="panel" class="card">
+  <div class="phead" id="phead"></div>
+  <div class="pbody" id="pbody"></div>
+</div>
+
+<div id="tip" class="card"></div>
+<div id="toast" class="card"></div>
+
+<div id="help"><div class="card">
+  <h2>How to use this map</h2>
+  <p><b>Navigate.</b> Scroll or pinch to zoom, drag to pan. Zoomed out you see the main areas. Zoom in to see topics, then individual questions and projects. Click a node for details. Double-click a node to fly to it. Drag a node to move it, and its children move with it. The address bar link points at the selected node, so you can share it. Keys: <code>/</code> search, <code>f</code> fit, <code>Esc</code> close.</p>
+  <p class="edit-only"><b>Edit.</b> In the side panel: <i>Edit</i>, <i>+ Child</i>, <i>+ Link</i>. Lists such as questions and experiments take one item per line.</p>
+  <p class="edit-only"><b>Saving.</b> If you run <code>python3 serve.py</code> and open <code>http://127.0.0.1:8765/map.html</code>, edits are written straight to <code>data.js</code>, with backups in <code>backups/</code>. If you open map.html as a file, edits stay in this browser until you click <i>Export</i> and replace data.js with the download.</p>
+  <p class="edit-only"><b>Ask Claude.</b> <i>Copy prompt for Claude</i> copies this node's context and asks Claude to fill in the area: literature, bottlenecks, open questions, and new nodes and links. Claude edits data.js directly. Reload the page to see the changes.</p>
+  <p class="muted">Literature entries are starting points written from memory. Check them before citing.</p>
+  <button class="btn primary" id="helpClose">Got it</button>
+</div></div>
+
+<script>
+"use strict";
+const LIST_FIELDS = [
+  ["questions", "Research questions"], ["experiments", "Possible experiments"], ["theory", "Theory / expectations"],
+  ["bottlenecks", "Bottlenecks & open problems"], ["literature", "Key literature"]];
+const KINDS = ["region", "topic", "question", "project"];
+const STATUSES = ["idea", "active", "paused", "done", "rejected"];
+const ACTIVITY = ["unknown", "crowded", "active", "emerging", "sparse"];
+const EDGE_TYPES = {
+  feeds: "A produces something B uses", tests: "A is an experiment/test of B", analogy: "same idea in another place",
+  tension: "trade-off or risk", bounds: "theory that bounds / constrains B" };
+const RADIUS = { 1: 30, 2: 13, 3: 6.5, 4: 5 };
+const FONT = { 1: 21, 2: 13, 3: 11.5, 4: 11 };
+// zoom thresholds: band0 regions only labelled; band1 topic labels; band2 question dots; band3 question labels
+const BANDS = [0.5, 0.95, 1.6];
+const LS_KEY = "research-map-local-v1";
+const VIEW_ONLY = !!window.MAP_VIEW_ONLY;
+if (VIEW_ONLY) document.body.classList.add("view-only");
+
+let DATA = null, byId = new Map(), kids = new Map(), P = new Map();
+let mode = "file", serverVersion = null, fileBase = null;
+let K = 1, band = -1, selected = null, editing = false, linkFormOpen = false, filter = "";
+const hiddenTypes = new Set();
+
+const svg = d3.select("#map"), world = svg.append("g");
+const gTerr = world.append("g"), gEdges = world.append("g"), gNodes = world.append("g"),
+      gLabels = world.append("g"), gEdgeLabels = world.append("g");
+const zoom = d3.zoom().scaleExtent([0.12, 7]).on("zoom", onZoom);
+svg.call(zoom).on("dblclick.zoom", null);
+svg.on("click", e => { if (e.target === svg.node()) select(null); });
+
+// ───────────── data ─────────────
+function clone(x) { return JSON.parse(JSON.stringify(x)); }
+function lsGet() { try { return JSON.parse(localStorage.getItem(LS_KEY)); } catch { return null; } }
+function lsSet(v) { try { localStorage.setItem(LS_KEY, JSON.stringify(v)); return true; } catch { return false; } }
+function lsDel() { try { localStorage.removeItem(LS_KEY); } catch {} }
+
+async function boot() {
+  if (!VIEW_ONLY) try {
+    const r = await fetch("api/data", { cache: "no-store" });
+    if (r.ok) { const j = await r.json(); if (j.data) { mode = "server"; serverVersion = j.version; DATA = j.data; } }
+  } catch {}
+  if (mode === "file") {
+    if (!window.MAP_DATA) { document.body.innerHTML = "<p style='padding:24px'>Could not load data.js.</p>"; return; }
+    DATA = clone(window.MAP_DATA);
+    fileBase = DATA.updated;
+    const local = VIEW_ONLY ? null : lsGet();
+    if (local && local.data) {
+      if (local.base === fileBase) DATA = local.data;
+      else if (confirm("data.js changed since your unsaved browser edits.\n\nOK: load the new data.js (discard browser edits)\nCancel: keep browser edits")) lsDel();
+      else { DATA = local.data; fileBase = local.base; }
+    }
+  }
+  normalize();
+  setStatus(mode === "server" ? "Live: saving to data.js" : (lsGet() ? "Browser edits not yet exported" : "File mode: edits stay in this browser until you Export"),
+            mode === "server" ? "ok" : (lsGet() ? "warn" : ""));
+  document.getElementById("mapTitle").textContent = DATA.title || "Research Map";
+  document.getElementById("mapQuestion").textContent = DATA.question || "";
+  layout();
+  render();
+  fit(false);
+  const h = decodeURIComponent(location.hash.slice(1)), start = h.startsWith("n=") ? h.slice(2) : h;
+  if (start && byId.has(start)) { select(start); flyTo(start, false); }
+  if (!VIEW_ONLY) try { if (!localStorage.getItem("research-map-seen-help")) { openHelp(); localStorage.setItem("research-map-seen-help", "1"); } } catch {}
+}
+
+function normalize() {
+  DATA.nodes = DATA.nodes || []; DATA.edges = DATA.edges || []; DATA.regionColors = DATA.regionColors || {};
+  for (const n of DATA.nodes) {
+    for (const [f] of LIST_FIELDS) if (!Array.isArray(n[f])) n[f] = n[f] ? [String(n[f])] : [];
+    n.notes = n.notes || ""; n.summary = n.summary || ""; n.status = n.status || "idea";
+    n.activity = n.activity || "active"; n.interest = +n.interest || 0;
+  }
+  index();
+  DATA.edges = DATA.edges.filter(e => byId.has(e.source) && byId.has(e.target));
+}
+
+function index() {
+  byId = new Map(DATA.nodes.map(n => [n.id, n]));
+  kids = new Map();
+  for (const n of DATA.nodes) {
+    if (n.parent && !byId.has(n.parent)) n.parent = null;
+    if (!kids.has(n.parent)) kids.set(n.parent, []);
+    kids.get(n.parent).push(n);
+  }
+}
+const depth = n => { let d = 1; while (n.parent) { n = byId.get(n.parent); d++; } return d; };
+const regionOf = n => { while (n.parent) n = byId.get(n.parent); return n; };
+const ancestors = n => { const a = []; while (n.parent) { n = byId.get(n.parent); a.unshift(n); } return a; };
+const descendants = n => { const out = []; const st = [...(kids.get(n.id) || [])]; while (st.length) { const c = st.pop(); out.push(c); st.push(...(kids.get(c.id) || [])); } return out; };
+const PALETTE = ["#d1495b", "#00798c", "#d9902f", "#4f9d69", "#7b5ea7", "#3a6ea5", "#9a7b4f", "#c05299", "#5d8a2f", "#6b7a8f"];
+function color(n) {
+  const r = regionOf(n);
+  if (!DATA.regionColors[r.id]) {
+    const used = new Set(Object.values(DATA.regionColors));
+    DATA.regionColors[r.id] = PALETTE.find(c => !used.has(c)) || PALETTE[0];
+  }
+  return DATA.regionColors[r.id];
+}
+function hash(s) { let h = 2166136261; for (const c of s) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return (h >>> 0) / 4294967296; }
+
+// ───────────── layout ─────────────
+function layout(gentle = false) {
+  const nodes = [...DATA.nodes].sort((a, b) => depth(a) - depth(b));
+  const regions = nodes.filter(n => !n.parent);
+  regions.forEach((r, i) => {
+    if (!r.pos && !P.has(r.id)) { const a = (i / regions.length) * 2 * Math.PI; P.set(r.id, { x: 900 * Math.cos(a), y: 650 * Math.sin(a) }); }
+  });
+  const sim = nodes.map(n => {
+    const d = depth(n), prev = P.get(n.id);
+    let x, y;
+    if (n.pos) [x, y] = n.pos;
+    else if (prev) ({ x, y } = prev);
+    else {
+      const p = P.get(n.parent) || { x: 0, y: 0 }, a = hash(n.id) * 2 * Math.PI, dist = d === 2 ? 170 : 60;
+      x = p.x + dist * Math.cos(a); y = p.y + dist * Math.sin(a);
+    }
+    const s = { id: n.id, n, d, r: RADIUS[Math.min(d, 4)], x, y };
+    if (n.pos || d === 1) { s.fx = x; s.fy = y; }
+    P.set(n.id, s);
+    return s;
+  });
+  const sById = new Map(sim.map(s => [s.id, s]));
+  const links = sim.filter(s => s.n.parent).map(s => ({ source: sById.get(s.n.parent), target: s }));
+  const regionPull = s => sById.get(regionOf(s.n).id);
+  const f = d3.forceSimulation(sim)
+    .force("link", d3.forceLink(links).distance(l => l.target.d === 2 ? 175 : 62).strength(.7))
+    .force("charge", d3.forceManyBody().strength(s => [0, -900, -260, -45, -30][Math.min(s.d, 4)]).distanceMax(380))
+    .force("collide", d3.forceCollide(s => s.r + [0, 70, 34, 16, 12][Math.min(s.d, 4)]).strength(.9))
+    .force("x", d3.forceX(s => regionPull(s).x).strength(s => s.d === 1 ? 0 : .045))
+    .force("y", d3.forceY(s => regionPull(s).y).strength(s => s.d === 1 ? 0 : .045))
+    .alpha(gentle ? .25 : 1).stop();
+  const ticks = gentle ? 120 : 420;
+  for (let i = 0; i < ticks; i++) f.tick();
+  for (const s of sim) P.set(s.id, { x: s.x, y: s.y, r: s.r, d: s.d });
+}
+
+// ───────────── rendering ─────────────
+function render() {
+  index();
+  const nodes = DATA.nodes;
+  // territories
+  const regions = nodes.filter(n => !n.parent);
+  const terr = regions.map(r => {
+    const pts = [r, ...descendants(r)].map(n => { const p = P.get(n.id); return { x: p.x, y: p.y, r: p.r + (n === r ? 46 : 30) }; });
+    const c = d3.packEnclose(pts);
+    return { id: r.id, n: r, x: c.x, y: c.y, r: c.r };
+  });
+  gTerr.selectAll("circle").data(terr, d => d.id).join("circle")
+    .attr("class", "territory").attr("cx", d => d.x).attr("cy", d => d.y).attr("r", d => d.r)
+    .attr("fill", d => color(d.n)).attr("stroke", d => color(d.n));
+
+  // nodes
+  const ng = gNodes.selectAll("g.node").data(nodes, d => d.id).join(enter => {
+    const g = enter.append("g");
+    g.on("click", (e, d) => { e.stopPropagation(); select(d.id); })
+     .on("dblclick", (e, d) => { e.stopPropagation(); select(d.id); flyTo(d.id); })
+     .on("mouseenter", (e, d) => showTip(e, d)).on("mousemove", moveTip).on("mouseleave", hideTip)
+     .call(d3.drag().clickDistance(4).on("start", dragStart).on("drag", dragMove).on("end", dragEnd));
+    return g;
+  });
+  ng.attr("class", d => {
+    const dd = Math.min(depth(d), 4);
+    return `node d${dd} k-${d.kind} ${d.activity}`;
+  }).attr("transform", d => { const p = P.get(d.id); return `translate(${p.x},${p.y})`; });
+  ng.each(function (d) {
+    const g = d3.select(this), p = P.get(d.id), col = color(d);
+    g.selectAll("*").remove();
+    if (d.kind === "project") g.append("rect").attr("class", "shape").attr("x", -p.r * 1.25).attr("y", -p.r * 1.25)
+      .attr("width", p.r * 2.5).attr("height", p.r * 2.5).attr("rx", p.r * .5).attr("fill", col);
+    else g.append("circle").attr("class", "shape").attr("r", p.r).attr("fill", col);
+    if (d.interest >= 2) g.append("circle").attr("class", "ring").attr("r", p.r * (d.kind === "project" ? 1.9 : 1.45) + 1.5)
+      .attr("stroke-opacity", d.interest >= 3 ? 1 : .55);
+    if (d.status === "active" || d.status === "rejected" || d.status === "done")
+      g.append("circle").attr("class", "status-dot").attr("cx", p.r * .85).attr("cy", -p.r * .85).attr("r", Math.max(2.6, p.r * .38))
+        .attr("fill", d.status === "rejected" ? "var(--warn)" : d.status === "done" ? "var(--muted)" : "var(--ok)");
+  });
+
+  // labels
+  gLabels.selectAll("text").data(nodes, d => d.id).join("text")
+    .attr("class", d => `label d${Math.min(depth(d), 4)}`)
+    .attr("x", d => P.get(d.id).x).attr("y", d => { const p = P.get(d.id); return p.y + p.r * (d.kind === "project" ? 1.3 : 1) + (d.interest >= 2 ? p.r * .5 : 0); })
+    .attr("dy", "1.05em").text(d => d.title);
+
+  renderLegend();
+  sizeLabels();
+  updateBand(true);
+  applyHighlight();
+  applyFilter();
+}
+
+function onZoom(e) {
+  world.attr("transform", e.transform);
+  K = e.transform.k;
+  sizeLabels();
+  updateBand(false);
+}
+// labels keep a constant on-screen size while the map scales
+function sizeLabels() {
+  for (const d of [1, 2, 3, 4]) gLabels.selectAll(`.label.d${d}`).attr("font-size", FONT[d] / K);
+  gEdgeLabels.selectAll("text").attr("font-size", 10.5 / K);
+}
+function bandOf(k) { return BANDS.filter(b => k >= b).length; }
+function updateBand(force) {
+  const b = bandOf(K);
+  if (b === band && !force) return;
+  band = b;
+  svg.attr("class", `band${b}` + (selected ? " has-sel" : "") + (filter ? " filtering" : ""));
+  drawEdges();
+}
+// endpoints of cross-links are lifted to the deepest ancestor visible at this zoom
+function visibleDepth() { return band <= 0 ? 1 : band === 1 ? 2 : 9; }
+function lift(id, maxD) { let n = byId.get(id); while (depth(n) > maxD) n = byId.get(n.parent); return n.id; }
+
+function drawEdges() {
+  const maxD = visibleDepth(), agg = new Map(), direct = [];
+  const selSet = selected ? new Set([selected]) : null;
+  for (const e of DATA.edges) {
+    if (hiddenTypes.has(e.type)) continue;
+    const touchesSel = selSet && (selSet.has(e.source) || selSet.has(e.target));
+    if (touchesSel) { direct.push({ ...e, key: `${e.source}>${e.target}>${e.type}`, hl: true }); continue; }
+    const a = lift(e.source, maxD), b = lift(e.target, maxD);
+    if (a === b) continue;
+    if (a === e.source && b === e.target) { direct.push({ ...e, key: `${a}>${b}>${e.type}` }); continue; }
+    const key = a < b ? `${a}|${b}` : `${b}|${a}`;
+    const g = agg.get(key) || { key, source: a, target: b, count: 0, agg: true, labels: [] };
+    g.hl = !!selected && (a === selected || b === selected);
+    g.count++; g.labels.push(`${byId.get(e.source).title} → ${byId.get(e.target).title}`);
+    agg.set(key, g);
+  }
+  const all = [...agg.values(), ...direct];
+  const path = d => {
+    const s = P.get(d.source), t = P.get(d.target), dx = t.x - s.x, dy = t.y - s.y, bend = d.agg ? .08 : .16;
+    return `M${s.x},${s.y} Q${(s.x + t.x) / 2 - dy * bend},${(s.y + t.y) / 2 + dx * bend} ${t.x},${t.y}`;
+  };
+  gEdges.selectAll("g.e").data(all, d => d.key).join(enter => {
+    const g = enter.append("g").attr("class", "e");
+    g.append("path").attr("class", "vis");
+    g.append("path").attr("class", "edge-hit").append("title");
+    return g;
+  }).each(function (d) {
+    const g = d3.select(this), p = path(d);
+    g.select("path.vis").attr("d", p)
+      .attr("class", (d.agg ? "vis edge agg" : `vis edge t-${d.type}`) + (d.hl ? " hl" : ""))
+      .attr("stroke-width", d.agg ? 1.5 + 2.2 * Math.log2(1 + d.count) : null);
+    g.select("path.edge-hit").attr("d", p).select("title").text(d.agg
+      ? `${d.count} link${d.count > 1 ? "s" : ""} between ${byId.get(d.source).title} and ${byId.get(d.target).title}:\n` + d.labels.join("\n")
+      : `${byId.get(d.source).title} —${d.type}→ ${byId.get(d.target).title}${d.label ? "\n" + d.label : ""}`);
+  });
+  // edge labels only for the selected node's links
+  const labelled = direct.filter(d => d.hl && d.label);
+  gEdgeLabels.selectAll("text").data(labelled, d => d.key).join("text").attr("class", "edge-label")
+    .attr("x", d => { const s = P.get(d.source), t = P.get(d.target); return (s.x + t.x) / 2 - (t.y - s.y) * .08; })
+    .attr("y", d => { const s = P.get(d.source), t = P.get(d.target); return (s.y + t.y) / 2 + (t.x - s.x) * .08; })
+    .attr("font-size", 10.5 / K).text(d => d.label);
+}
+
+// ───────────── selection & highlight ─────────────
+function select(id) {
+  selected = id && byId.has(id) ? id : null;
+  editing = false; linkFormOpen = false;
+  svg.classed("has-sel", !!selected);
+  try { history.replaceState(null, "", selected ? "#" + selected : location.pathname + location.search); } catch {}
+  applyHighlight(); drawEdges(); renderPanel();
+}
+function applyHighlight() {
+  const hl = new Set();
+  if (selected) {
+    const n = byId.get(selected);
+    hl.add(n.id); ancestors(n).forEach(a => hl.add(a.id)); (kids.get(n.id) || []).forEach(c => hl.add(c.id));
+    for (const e of DATA.edges) {
+      if (hiddenTypes.has(e.type)) continue;
+      if (e.source === n.id) hl.add(e.target);
+      if (e.target === n.id) hl.add(e.source);
+    }
+  }
+  const neighbours = d => selected && d.id !== selected && hl.has(d.id) && !ancestors(byId.get(selected)).some(a => a.id === d.id);
+  gNodes.selectAll("g.node").classed("hl", d => hl.has(d.id)).classed("sel", d => d.id === selected).classed("force", d => !!neighbours(d) || d.id === selected);
+  gLabels.selectAll("text").classed("hl", d => hl.has(d.id)).classed("force", d => !!neighbours(d) || d.id === selected);
+}
+function applyFilter() {
+  const test = {
+    interest: n => n.interest >= 2, active: n => n.status === "active",
+    open: n => n.activity === "emerging" || n.activity === "sparse", crowded: n => n.activity === "crowded" }[filter];
+  svg.classed("filtering", !!test);
+  gNodes.selectAll("g.node").classed("fdim", d => test ? !test(d) : false);
+  gLabels.selectAll("text").classed("fdim", d => test ? !test(d) : false);
+}
+
+// ───────────── camera ─────────────
+function panelOffset() { return document.getElementById("panel").classList.contains("open") && innerWidth > 760 ? 210 : 0; }
+function fit(animate = true) {
+  const xs = [], ys = [];
+  for (const n of DATA.nodes) { const p = P.get(n.id); xs.push(p.x); ys.push(p.y); }
+  if (!xs.length) return;
+  const [x0, x1] = d3.extent(xs), [y0, y1] = d3.extent(ys), w = innerWidth, h = innerHeight;
+  const k = Math.min(1.2, 0.86 / Math.max((x1 - x0 + 300) / w, (y1 - y0 + 300) / (h - 60)));
+  const t = d3.zoomIdentity.translate(w / 2 - k * (x0 + x1) / 2, h / 2 + 30 - k * (y0 + y1) / 2).scale(k);
+  (animate ? svg.transition().duration(650) : svg).call(zoom.transform, t);
+}
+function flyTo(id, animate = true) {
+  const n = byId.get(id), p = P.get(id), d = Math.min(depth(n), 4);
+  const k = Math.max(K, [0, 0.85, 1.45, 2.3, 2.6][d]);
+  const t = d3.zoomIdentity.translate(innerWidth / 2 - panelOffset() - k * p.x, innerHeight / 2 + 20 - k * p.y).scale(k);
+  (animate ? svg.transition().duration(750) : svg).call(zoom.transform, t);
+}
+
+// ───────────── drag (moves a node with its whole subtree) ─────────────
+let dragSet = null;
+function dragStart(e, d) { dragSet = [d, ...descendants(d)]; hideTip(); }
+function dragMove(e, d) {
+  for (const n of dragSet) { const p = P.get(n.id); p.x += e.dx; p.y += e.dy; }
+  for (const n of dragSet) { const p = P.get(n.id); if (n.pos) n.pos = [p.x, p.y]; }
+  const p = P.get(d.id); d.pos = [Math.round(p.x), Math.round(p.y)];
+  render();
+}
+function dragEnd(e, d) {
+  if (Math.abs(e.x - e.subject.x) + Math.abs(e.y - e.subject.y) > 3) { const p = P.get(d.id); d.pos = [Math.round(p.x), Math.round(p.y)]; persist(); }
+  dragSet = null;
+}
+
+// ───────────── tooltip ─────────────
+const tip = document.getElementById("tip");
+function showTip(e, d) {
+  if (dragSet) return;
+  const s = d.summary.length > 180 ? d.summary.slice(0, 177) + "…" : d.summary;
+  tip.innerHTML = `<b></b><span class="muted"></span>`;
+  tip.querySelector("b").textContent = d.title; tip.querySelector("span").textContent = s;
+  tip.style.display = "block"; moveTip(e);
+}
+function moveTip(e) { tip.style.left = Math.min(e.clientX + 14, innerWidth - 320) + "px"; tip.style.top = (e.clientY + 14) + "px"; }
+function hideTip() { tip.style.display = "none"; }
+
+// ───────────── panel ─────────────
+const el = (tag, attrs = {}, ...children) => {
+  const x = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k.startsWith("on")) x.addEventListener(k.slice(2), v);
+    else if (k === "class") x.className = v; else if (v !== undefined && v !== null) x.setAttribute(k, v);
+  }
+  for (const c of children.flat()) if (c !== null && c !== undefined && c !== false) x.append(c instanceof Node ? c : String(c));
+  return x;
+};
+function stars(i) { return i > 0 ? "★".repeat(i) : ""; }
+
+function renderPanel() {
+  const panel = document.getElementById("panel"), head = document.getElementById("phead"), body = document.getElementById("pbody");
+  if (!selected) { panel.classList.remove("open"); return; }
+  panel.classList.add("open");
+  const n = byId.get(selected);
+  head.replaceChildren(), body.replaceChildren();
+  const crumbs = el("div", { class: "crumbs" });
+  ancestors(n).forEach(a => crumbs.append(el("a", { onclick: () => { select(a.id); flyTo(a.id); } }, a.title), "›"));
+  crumbs.append(el("span", { class: "sw", style: `background:${color(n)}` }));
+  head.append(crumbs, el("h2", {}, n.title));
+  head.append(el("div", { class: "chips" },
+    el("span", { class: "chip" }, n.kind),
+    el("span", { class: `chip st-${n.status}` }, n.status),
+    el("span", { class: "chip" }, `field: ${n.activity}`),
+    n.interest ? el("span", { class: "chip gold" }, stars(n.interest)) : null));
+  head.append(el("div", { class: "pactions" },
+    el("button", { class: "btn small edit-only" + (editing ? " primary" : ""), onclick: () => { editing = !editing; linkFormOpen = false; renderPanel(); } }, editing ? "Done" : "Edit"),
+    el("button", { class: "btn small edit-only", onclick: () => addChild(n) }, "+ Child"),
+    el("button", { class: "btn small edit-only", onclick: () => { linkFormOpen = !linkFormOpen; renderPanel(); } }, "+ Link"),
+    el("button", { class: "btn small", onclick: () => flyTo(n.id) }, "Zoom here"),
+    el("button", { class: "btn small edit-only", onclick: () => copyPrompt(n) }, "Copy prompt for Claude"),
+    el("button", { class: "btn small", onclick: () => select(null) }, "✕")));
+
+  if (linkFormOpen) body.append(linkForm(n));
+  if (editing) body.append(editForm(n));
+  else {
+    if (n.summary) body.append(el("div", { class: "sec" }, el("p", {}, n.summary)));
+    for (const [f, label] of LIST_FIELDS) if (n[f].length)
+      body.append(el("div", { class: "sec" }, el("h4", {}, label), el("ul", {}, n[f].map(x => el("li", {}, x)))));
+    if (n.notes) body.append(el("div", { class: "sec" }, el("h4", {}, "Notes"), el("p", { style: "white-space:pre-wrap" }, n.notes)));
+  }
+  const ch = kids.get(n.id) || [];
+  if (ch.length) body.append(el("div", { class: "sec" }, el("h4", {}, `Inside (${ch.length})`),
+    ch.map(c => el("div", { class: "conn", onclick: () => { select(c.id); flyTo(c.id); } },
+      el("span", { class: "sw", style: `background:${color(c)}` }), el("span", {}, c.title),
+      el("span", { class: "lab", style: "margin-left:auto" }, stars(c.interest))))));
+  const conns = DATA.edges.map((e, i) => ({ e, i })).filter(({ e }) => e.source === n.id || e.target === n.id);
+  if (conns.length) body.append(el("div", { class: "sec" }, el("h4", {}, `Connections (${conns.length})`),
+    conns.map(({ e, i }) => {
+      const out = e.source === n.id, other = byId.get(out ? e.target : e.source);
+      return el("div", { class: "conn", onclick: () => { select(other.id); flyTo(other.id); } },
+        el("span", { class: `ty ty-${e.type}` }, (out ? "→ " : "← ") + e.type),
+        el("span", {}, el("div", {}, other.title), e.label ? el("div", { class: "lab" }, e.label) : null),
+        editing ? el("button", { class: "x", title: "Delete link", onclick: ev => { ev.stopPropagation(); DATA.edges.splice(i, 1); changed(false); } }, "✕") : null);
+    })));
+  if (n.source) body.append(el("div", { class: "sec" }, el("h4", {}, "Source"), el("p", { class: "muted" }, n.source)));
+}
+
+function editForm(n) {
+  const f = el("form", { class: "edit", onsubmit: e => e.preventDefault() });
+  const field = (label, input) => [el("label", {}, label), input];
+  const inp = (key, v) => el("input", { value: v ?? "", "data-k": key });
+  const sel = (key, opts, v) => { const s = el("select", { "data-k": key }, opts.map(o => { const [val, lab] = Array.isArray(o) ? o : [o, o]; return el("option", { value: val }, lab); })); s.value = v; return s; };
+  const parents = [["", "— none (region) —"], ...DATA.nodes.filter(m => m.id !== n.id && !descendants(n).includes(m))
+    .map(m => [m.id, "· ".repeat(depth(m) - 1) + m.title])];
+  f.append(...field("Title", inp("title", n.title)));
+  f.append(...field("Summary", el("textarea", { "data-k": "summary" }, n.summary)));
+  f.append(el("div", { class: "row" },
+    el("div", {}, ...field("Kind", sel("kind", KINDS, n.kind))),
+    el("div", {}, ...field("Status", sel("status", STATUSES, n.status))),
+    el("div", {}, ...field("Field activity", sel("activity", ACTIVITY, n.activity)))));
+  f.append(el("div", { class: "row" },
+    el("div", {}, ...field("Our interest", sel("interest", [["0", "–"], ["1", "★"], ["2", "★★"], ["3", "★★★"]], String(n.interest)))),
+    el("div", { style: "grid-column: span 2" }, ...field("Parent", sel("parent", parents, n.parent || "")))));
+  for (const [k, label] of LIST_FIELDS) f.append(...field(label + " (one per line)", el("textarea", { "data-k": k }, n[k].join("\n"))));
+  f.append(...field("Notes", el("textarea", { "data-k": "notes" }, n.notes)));
+  f.append(...field("Source", inp("source", n.source)));
+  f.append(...field("Id (used by links)", el("input", { value: n.id, disabled: "" })));
+  f.addEventListener("change", ev => {
+    const k = ev.target.dataset.k; if (!k) return;
+    let v = ev.target.value;
+    if (LIST_FIELDS.some(([x]) => x === k)) v = v.split("\n").map(s => s.trim()).filter(Boolean);
+    if (k === "interest") v = +v;
+    if (k === "parent") { v = v || null; if (!v && !n.pos) { const p = P.get(n.id); n.pos = [Math.round(p.x), Math.round(p.y)]; } }
+    const structural = k === "parent" || k === "kind";
+    n[k] = v;
+    index();
+    if (structural) layout(true);
+    render();
+    // re-render the panel only for structural changes, so typing focus is not lost
+    if (structural) renderPanel(); else document.querySelector("#phead h2").textContent = n.title;
+    persist();
+  });
+  const btns = el("div", { class: "pactions" });
+  if (n.pos) btns.append(el("button", { class: "btn small", onclick: () => { delete n.pos; changed(true); } }, "Unpin position"));
+  btns.append(el("button", { class: "btn small danger", onclick: () => deleteNode(n) }, "Delete node"));
+  f.append(btns);
+  return f;
+}
+
+function linkForm(n) {
+  const box = el("div", { class: "linkform" });
+  const list = el("datalist", { id: "nodeList" }, DATA.nodes.filter(m => m.id !== n.id).map(m => el("option", { value: `${m.title} [${m.id}]` })));
+  const target = el("input", { list: "nodeList", placeholder: "Search target node…" });
+  const dir = el("select", {}, el("option", { value: "out" }, "this → target"), el("option", { value: "in" }, "target → this"));
+  const type = el("select", {}, Object.entries(EDGE_TYPES).map(([t, d]) => el("option", { value: t }, `${t} — ${d}`)));
+  const label = el("input", { placeholder: "Relationship (optional): what connects them?" });
+  box.append(el("b", {}, "New link"), list, target, dir, type, label,
+    el("div", { class: "pactions" },
+      el("button", { class: "btn small primary", onclick: () => {
+        const m = target.value.match(/\[([^\]]+)\]\s*$/), tid = m ? m[1] : null;
+        if (!tid || !byId.has(tid)) { toast("Choose a target from the list"); return; }
+        const [s, t] = dir.value === "out" ? [n.id, tid] : [tid, n.id];
+        DATA.edges.push({ source: s, target: t, type: type.value, label: label.value.trim() });
+        linkFormOpen = false; changed(false);
+      } }, "Add link"),
+      el("button", { class: "btn small", onclick: () => { linkFormOpen = false; renderPanel(); } }, "Cancel")));
+  setTimeout(() => target.focus(), 0);
+  return box;
+}
+
+function uid(title) {
+  const base = (title || "node").toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, "").slice(0, 28) || "node";
+  let id = base, i = 2; while (byId.has(id)) id = `${base}_${i++}`; return id;
+}
+function addChild(parent) {
+  const d = parent ? depth(parent) : 0;
+  const n = { id: uid("new " + (parent ? parent.id : "region")), parent: parent ? parent.id : null,
+    kind: d === 0 ? "region" : d === 1 ? "topic" : "question", title: "New " + (d === 0 ? "region" : d === 1 ? "topic" : "question"),
+    summary: "", questions: [], experiments: [], theory: [], bottlenecks: [], literature: [], notes: "",
+    status: "idea", activity: "emerging", interest: 1, source: "" };
+  if (!parent) {
+    const t = d3.zoomTransform(svg.node());
+    n.pos = [Math.round((innerWidth / 2 - t.x) / t.k), Math.round((innerHeight / 2 - t.y) / t.k)];
+  }
+  DATA.nodes.push(n);
+  index(); layout(true); render();
+  selected = n.id; editing = true; linkFormOpen = false;
+  svg.classed("has-sel", true); applyHighlight(); drawEdges(); renderPanel(); flyTo(n.id);
+  persist();
+  setTimeout(() => { const t = document.querySelector('#pbody [data-k="title"]'); if (t) { t.focus(); t.select(); } }, 50);
+}
+function deleteNode(n) {
+  const sub = descendants(n);
+  if (!confirm(`Delete "${n.title}"${sub.length ? ` and its ${sub.length} descendant node(s)` : ""}? Links touching them are removed too.`)) return;
+  const gone = new Set([n.id, ...sub.map(s => s.id)]);
+  DATA.nodes = DATA.nodes.filter(m => !gone.has(m.id));
+  DATA.edges = DATA.edges.filter(e => !gone.has(e.source) && !gone.has(e.target));
+  if (!n.parent) delete DATA.regionColors[n.id];
+  gone.forEach(id => P.delete(id));
+  selected = null; editing = false;
+  index(); render(); renderPanel(); persist();
+}
+
+function changed(relayout) {
+  index();
+  if (relayout) layout(true);
+  render(); renderPanel(); persist();
+}
+
+// ───────────── persistence ─────────────
+let saveTimer = null;
+function persist() { if (VIEW_ONLY) return; clearTimeout(saveTimer); setStatus("Saving…"); saveTimer = setTimeout(save, 500); }
+async function save(force = false) {
+  DATA.updated = new Date().toISOString();
+  if (mode === "server") {
+    try {
+      const r = await fetch("api/save", { method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ base: serverVersion, force, data: DATA }) });
+      const j = await r.json();
+      if (r.status === 409) { conflict(); return; }
+      if (!r.ok) throw new Error(j.error || r.status);
+      serverVersion = j.version; setStatus("Saved to data.js ✓", "ok");
+    } catch (err) { setStatus("Save failed: " + err.message, "warn"); }
+  } else {
+    lsSet({ base: fileBase, data: DATA })
+      ? setStatus("Saved in this browser only. Click Export to keep it", "warn")
+      : setStatus("Browser storage unavailable. Export to keep edits", "warn");
+  }
+}
+function conflict() {
+  const st = document.getElementById("status");
+  st.className = "warn"; st.replaceChildren("data.js changed on disk. ",
+    el("button", { class: "btn small", onclick: () => location.reload() }, "Reload (drop my edit)"), " ",
+    el("button", { class: "btn small danger", onclick: () => save(true) }, "Overwrite"));
+}
+function setStatus(text, cls = "") { if (VIEW_ONLY) return; const s = document.getElementById("status"); s.textContent = text; s.className = cls; }
+function serialize() { return "window.MAP_DATA = " + JSON.stringify(DATA, null, 2) + ";\n"; }
+function exportData() {
+  const a = el("a", { href: URL.createObjectURL(new Blob([serialize()], { type: "text/javascript" })), download: "data.js" });
+  document.body.append(a); a.click(); a.remove();
+  if (mode === "file") { fileBase = DATA.updated; lsSet({ base: fileBase, data: DATA }); setStatus("Exported. Replace data.js with the download", "ok"); }
+}
+function importData(file) {
+  file.text().then(text => {
+    let t = text.trim(); if (t.startsWith("window.MAP_DATA")) t = t.replace(/^window\.MAP_DATA\s*=\s*/, "").replace(/;\s*$/, "");
+    const d = JSON.parse(t); if (!Array.isArray(d.nodes)) throw new Error("no nodes array");
+    if (!confirm(`Replace the current map with ${d.nodes.length} nodes from ${file.name}?`)) return;
+    DATA = d; P.clear(); normalize(); selected = null; layout(); render(); renderPanel(); fit(); persist();
+  }).catch(err => toast("Import failed: " + err.message));
+}
+
+// ───────────── Claude prompt ─────────────
+function copyPrompt(n) {
+  const path = [...ancestors(n), n].map(a => a.title).join(" › ");
+  const ch = (kids.get(n.id) || []).map(c => `  - ${c.title} [${c.id}]`).join("\n") || "  (none yet)";
+  const conns = DATA.edges.filter(e => e.source === n.id || e.target === n.id).map(e => {
+    const o = e.source === n.id ? byId.get(e.target) : byId.get(e.source);
+    return `  - ${e.source === n.id ? "→" : "←"} ${e.type}: ${o.title} [${o.id}]${e.label ? " — " + e.label : ""}`;
+  }).join("\n") || "  (none yet)";
+  const lists = LIST_FIELDS.filter(([f]) => n[f].length).map(([f, l]) => `${l}:\n` + n[f].map(x => "  - " + x).join("\n")).join("\n");
+  const text = `Please zoom into this area of my research map (data.js next to map.html) and fill it in.
+
+Node: ${n.title} [${n.id}]   (${n.kind}, status ${n.status})
+Path: ${path}
+Summary: ${n.summary || "(empty)"}
+${lists}
+Children:
+${ch}
+Connections:
+${conns}
+
+Tasks:
+1. What exists in the literature here (key papers with authors + year; say if unsure)?
+2. What are the biggest bottlenecks and open questions?
+3. Propose 3–8 new child nodes (questions / possible experiments / theory) and new edges, including to other regions.
+4. Write the additions directly into data.js (same schema; edge types: ${Object.keys(EDGE_TYPES).join(", ")}) and bump "updated".`;
+  navigator.clipboard.writeText(text).then(() => toast("Prompt copied. Paste it into Claude Code"), () => { prompt("Copy this prompt:", text); });
+}
+
+// ───────────── legend, search, misc ─────────────
+function renderLegend() {
+  const box = document.getElementById("lgRegions"); box.replaceChildren();
+  for (const r of DATA.nodes.filter(n => !n.parent)) {
+    const cnt = descendants(r).length + 1;
+    box.append(el("div", { class: "lg-row click", onclick: () => { select(r.id); flyTo(r.id); } },
+      el("span", { class: "sw", style: `background:${color(r)}` }), r.title, el("span", { class: "count", title: "nodes in region" }, cnt)));
+  }
+  const eb = document.getElementById("lgEdges"); eb.replaceChildren();
+  for (const [t, desc] of Object.entries(EDGE_TYPES)) {
+    const cb = el("input", { type: "checkbox" }); cb.checked = !hiddenTypes.has(t);
+    cb.addEventListener("change", () => { cb.checked ? hiddenTypes.delete(t) : hiddenTypes.add(t); applyHighlight(); drawEdges(); });
+    const sw = el("span", { class: `ty-${t}`, style: "font-weight:700;width:46px" }, t);
+    eb.append(el("div", { class: "lg-row", title: desc }, el("label", {}, cb, sw, el("span", { class: "muted" }, desc))));
+  }
+}
+
+const search = document.getElementById("search"), results = document.getElementById("results");
+let resIdx = 0, resList = [];
+search.addEventListener("input", () => {
+  const q = search.value.trim().toLowerCase();
+  if (!q) { results.classList.remove("open"); return; }
+  const score = n => {
+    const t = n.title.toLowerCase();
+    if (t.startsWith(q)) return 0; if (t.includes(q)) return 1;
+    const blob = [n.summary, n.notes, ...LIST_FIELDS.flatMap(([f]) => n[f])].join(" ").toLowerCase();
+    return blob.includes(q) ? 2 : 9;
+  };
+  resList = DATA.nodes.map(n => [score(n), n]).filter(([s]) => s < 9).sort((a, b) => a[0] - b[0]).slice(0, 14).map(x => x[1]);
+  resIdx = 0; drawResults();
+});
+function drawResults() {
+  results.replaceChildren(...(resList.length ? resList.map((n, i) => el("div", { class: "res" + (i === resIdx ? " active" : ""), onmousedown: () => pick(n) },
+    el("span", { class: "sw", style: `background:${color(n)}` }), el("span", {}, n.title), el("small", {}, regionOf(n).title)))
+    : [el("div", { class: "res muted" }, "No matches")]));
+  results.classList.add("open");
+}
+function pick(n) { search.value = ""; results.classList.remove("open"); search.blur(); select(n.id); flyTo(n.id); }
+search.addEventListener("keydown", e => {
+  if (e.key === "ArrowDown") { resIdx = Math.min(resIdx + 1, resList.length - 1); drawResults(); e.preventDefault(); }
+  if (e.key === "ArrowUp") { resIdx = Math.max(resIdx - 1, 0); drawResults(); e.preventDefault(); }
+  if (e.key === "Enter" && resList[resIdx]) pick(resList[resIdx]);
+  if (e.key === "Escape") { search.value = ""; results.classList.remove("open"); search.blur(); }
+});
+search.addEventListener("blur", () => setTimeout(() => results.classList.remove("open"), 150));
+
+document.addEventListener("keydown", e => {
+  if (e.target.matches("input, textarea, select")) return;
+  if (e.key === "/") { e.preventDefault(); search.focus(); }
+  if (e.key === "f") fit();
+  if (e.key === "Escape") { closeHelp(); select(null); }
+});
+function toast(msg) { const t = document.getElementById("toast"); t.textContent = msg; t.style.display = "block"; clearTimeout(t._h); t._h = setTimeout(() => t.style.display = "none", 2600); }
+function openHelp() { document.getElementById("help").classList.add("open"); }
+function closeHelp() { document.getElementById("help").classList.remove("open"); }
+
+document.getElementById("bFit").onclick = () => fit();
+document.getElementById("bRegion").onclick = () => addChild(null);
+document.getElementById("bExport").onclick = exportData;
+document.getElementById("bImport").onclick = () => document.getElementById("importFile").click();
+document.getElementById("importFile").onchange = e => { if (e.target.files[0]) importData(e.target.files[0]); e.target.value = ""; };
+document.getElementById("bHelp").onclick = openHelp;
+document.getElementById("helpClose").onclick = closeHelp;
+document.getElementById("help").onclick = e => { if (e.target.id === "help") closeHelp(); };
+document.getElementById("hlFilter").onchange = e => { filter = e.target.value; applyFilter(); };
+document.getElementById("legendHead").onclick = () => {
+  const lg = document.getElementById("legend"); lg.classList.toggle("collapsed");
+  document.getElementById("legendToggle").textContent = lg.classList.contains("collapsed") ? "show" : "hide";
+};
+(function theme() {
+  let t = null; try { t = localStorage.getItem("research-map-theme"); } catch {}
+  if (t) document.documentElement.dataset.theme = t;
+  document.getElementById("bTheme").onclick = () => {
+    const dark = document.documentElement.dataset.theme ? document.documentElement.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.dataset.theme = dark ? "light" : "dark";
+    try { localStorage.setItem("research-map-theme", document.documentElement.dataset.theme); } catch {}
+  };
+})();
+if (innerWidth <= 760) { document.getElementById("legend").classList.add("collapsed"); document.getElementById("legendToggle").textContent = "show"; }
+boot();
+</script>
+</body>
+</html>
